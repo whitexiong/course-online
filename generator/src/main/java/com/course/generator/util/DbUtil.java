@@ -15,8 +15,8 @@ public class DbUtil {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/courseimooc";
-            String user = "courseimooc";
-            String pass = "courseimooc";
+            String user = "root";
+            String pass = "123456";
             conn = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

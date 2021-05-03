@@ -53,7 +53,7 @@
     "children": [{
         "id": "0301", "name": "文件管理", "page": "file/file",
         "children": [
-            {"id": "030101", "name": "文件管理", "request": ["/file/admin/file"]}
+            {"id": "030101", "name": "文件管理", "request": ["/file/admin/file", "/file/admin/check", "/file/admin/oss-append","/file/admin/oss-simple", "/file/admin/file/list"]}
         ]
     }]
 }]
