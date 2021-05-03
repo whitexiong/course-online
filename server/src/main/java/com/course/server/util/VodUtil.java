@@ -43,8 +43,8 @@ public class VodUtil {
         //request.setDescription("this is desc");
         //request.setTags("tag1,tag2");
 //        request.setCoverURL("http://vod.aliyun.com/test_cover_url.jpg");
-        request.setCateId(1000115308L);
-        request.setTemplateGroupId("78fffb8c0c2426efd5baaaafed76fe36");
+        request.setCateId(1000298712L);
+        request.setTemplateGroupId("d1f53d9395d7f1cb9e6d839f293910db");
         //request.setWorkflowId("");
         //request.setStorageLocation("");
         //request.setAppId("app-1000000");
@@ -155,15 +155,15 @@ public class VodUtil {
 
     public static void main(String[] argv) {
         //您的AccessKeyId
-        String accessKeyId = "LTAI4FnmXZVs9Pufn8kt2whV";
+        String accessKeyId = "LTAI5tK4DYgoWkR6KkPkUQrq";
         //您的AccessKeySecret
-        String accessKeySecret = "yQqZJ0WGnyAxaT9Gy1mKIJXY68F6A6";
+        String accessKeySecret = "gyqujDuE7dn6SDLUnkEsqL6LAJ6gVm";
         //需要上传到VOD的本地视频文件的完整路径，需要包含文件扩展名
-        String localFile = "D:\\imooc\\course\\workspace\\course\\admin\\public\\static\\image\\小节视频\\test.mp4";
+        String localFile = "C:\\Users\\13404\\Videos\\test2.mp4";
         try {
             // 初始化VOD客户端并获取上传地址和凭证
             DefaultAcsClient vodClient = initVodClient(accessKeyId, accessKeySecret);
-            String fileName = "test.mp4";
+            String fileName = "test2.mp4";
             CreateUploadVideoResponse createUploadVideoResponse = createUploadVideo(vodClient, fileName);
             // 执行成功会返回VideoId、UploadAddress和UploadAuth
             String videoId = createUploadVideoResponse.getVideoId();
