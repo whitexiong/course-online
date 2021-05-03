@@ -30,7 +30,15 @@
     }, {
         "id": "0202", "name": "课程管理", "page": "business/course",
         "children": [
-            {"id": "020201", "name": "增删改查", "request": ["/business/admin/course", "/business/admin/category/all"]}
+            {"id": "020201",
+             "name": "增删改查",
+             "request": ["/business/admin/course", "/business/admin/category/all", "/business/admin/course-content-file/list", "/business/admin/course-content-file/save", "/business/admin/course-content-file/delete"]
+            },
+            {
+                "id": "020202",
+                "name": "章节管理",
+                "request": ["/business/admin/chapter/save", "/business/admin/chapter/list", "/business/admin/chapter/delete","/business/admin/section/save","/business/admin/section/list","/business/admin/section/delete"]
+            }
         ]
     }, {
         "id": "0203", "name": "讲师管理", "page": "business/teacher",
@@ -53,7 +61,7 @@
     "children": [{
         "id": "0301", "name": "文件管理", "page": "file/file",
         "children": [
-            {"id": "030101", "name": "文件管理", "request": ["/file/admin/file", "/file/admin/check", "/file/admin/oss-append","/file/admin/oss-simple", "/file/admin/file/list"]}
+            {"id": "030101", "name": "文件管理", "request": ["/file/admin/file", "/file/admin/vod", "/file/admin/check", "/file/admin/oss-append","/file/admin/oss-simple", "/file/admin/file/list","/file/admin/get-auth"]}
         ]
     }]
 }]
