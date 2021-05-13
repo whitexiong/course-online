@@ -1,12 +1,10 @@
-# 在线教育
+# 选题
 
-SpringCloud + Vue 
+SpringCloud + Vue  的在线视频课程系统与实现
+
+# 架构
 
 前后端分离
-
-开发**在线视频**系统
-
-视频学习网站+管理后台
 
 ## 项目模块说明
 
@@ -32,32 +30,6 @@ SpringCloud + Vue
   网站模块，vue cli项目
 
 
-## 项目初始化
-
-* 需要本地安装好idea, nodejs，jdk1.8, mysql5.7, navicat（数据库可视化工具）
-* 将下载好的源码，用idea打开
-* 刷新maven依赖
-* 安装vue cli，参照课程4-1
-
-```
-npm install -g @vue/cli
-```
-
-* 下载node模块
-
-```
-初始化web模块
-cd web
-npm install
-
-初始化admin模块
-cd admin
-npm install
-```
-
-* 新建数据库courseimooc，并courseimooc，密码courseimooc，参照课程3-1
-* 数据库初始脚本在/doc/db/all.sql
-
 ## 项目启动
 
 * 启动注册中心：EurekaApplication
@@ -72,11 +44,20 @@ npm install
 
 * 控台地址: http://localhost:8080/login<br>
   初始用户名密码：test/test
-* 控台地址: http://localhost:8081<br>
-  可以自己注册用户，短信验证码从后台日志看，或看sms表
 
-## 资源配置
 
-所有资源都在/doc/db/resource.json<br>
-需要在控台上将所有的资源配置进去，并在角色管理中配置权限
-权限配置好后，需要重新登录
+## 启动 Redis
+
+> cd C:\software\redis\Redis-x64-5.0.10 <br>
+> redis-server.exe redis.windows.conf
+
+## 启动 Vue 后端
+
+> cd C:\software\LunWen\www\zj\course-online\admin <br>
+> npm run serve-dev
+
+## 启动 Vue 前端
+
+> cd C:\software\LunWen\www\zj\course-online\web <br>
+> npm run serve-dev
+

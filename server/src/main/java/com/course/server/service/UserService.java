@@ -153,6 +153,7 @@ public class UserService {
             for (int i = 0, l = resourceDtoList.size(); i < l; i++) {
                 ResourceDto resourceDto = resourceDtoList.get(i);
                 String arrayString = resourceDto.getRequest();
+                //JSON字符串传递
                 List<String> requestList = JSON.parseArray(arrayString, String.class);
                 if (!CollectionUtils.isEmpty(requestList)) {
                     requestSet.addAll(requestList);

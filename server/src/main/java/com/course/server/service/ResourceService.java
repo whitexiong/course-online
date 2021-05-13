@@ -81,9 +81,12 @@ public class ResourceService {
      */
     @Transactional
     public void saveJson(String json) {
+
+        //获取JSON数据为list
         List<ResourceDto> jsonList = JSON.parseArray(json, ResourceDto.class);
         List<ResourceDto> list = new ArrayList<>();
         if (!CollectionUtils.isEmpty(jsonList)) {
+            //递归的保存
             for (ResourceDto d: jsonList) {
                 d.setParent("");
                 add(list, d);

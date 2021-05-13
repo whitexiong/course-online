@@ -16,7 +16,7 @@
           <a href="index.html" class="navbar-brand">
             <small>
               <i class="fa fa-leaf"></i>
-              在线视频课程
+              在线视频课程（周静）
             </small>
           </a>
         </div>
@@ -501,7 +501,7 @@
         <div class="footer-inner">
           <div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">甲蛙</span>
+							<span class="blue bolder">CXX1</span>
 							在线视频课程 &copy; 2099-2099
 						</span>
 
@@ -561,10 +561,10 @@
           console.log("---->页面跳转：", val, oldVal);
           let _this = this;
 
-          if (!_this.hasResourceRouter(val.name)) {
-            _this.$router.push("/login");
-            return;
-          }
+          // if (!_this.hasResourceRouter(val.name)) {
+          //   _this.$router.push("/login");
+          //   return;
+          // }
 
           _this.$nextTick(function(){  //页面加载完成后执行
             _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
@@ -581,14 +581,15 @@
         let _this = this;
         let resources = Tool.getLoginUser().resources;
         if (Tool.isEmpty(resources)) {
-          return false;
+          // return false;
         }
         for (let i = 0; i < resources.length; i++) {
           if (router === resources[i].page) {
             return true;
           }
         }
-        return false;
+        // return false;
+        return true;
       },
       /**
        * 查找是否有权限
